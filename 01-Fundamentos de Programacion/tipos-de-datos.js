@@ -85,3 +85,33 @@ console.log(misNumerosSuerte);
 console.log(otroArray);
 
 
+/*Objeto*/
+
+let persona = {
+    nombre : "Alejandro",
+    edad : 20,
+    colorCabello : "negro",
+    colorOjos : "cafes",
+    altura : 1.68,
+    peso : undefined,
+    vivo : true,
+    novia : false,
+} 
+
+console.log(persona);
+//Accedemos al valor de una clave dentro de un objeto 
+//Con la notacion de corchetes []
+console.log(persona.nombre);
+console.log(persona.altura);
+console.log(persona.novia);
+
+/*Function*/
+
+let mensajito = function () {
+    //Pasamos el codigo que ejecuta la funcion
+    console.log("Este es un mensaje lanzado por una funcion");
+}
+
+mensajito();
+
+

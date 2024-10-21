@@ -117,3 +117,111 @@ let numeroQuitado = frutasFavoritas.pop()
 console.log(numerosSuerte);
 
 console.log(numeroQuitado)
+
+/*
+
+Unshift
+
+Agrega un elemento al inicio del array.
+
+nombreArray.unshift(elemento)
+
+*/
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.unshift("sandia");
+
+console.log(frutasFavoritas);
+
+/*
+
+shift
+
+Elimina el primer elemento del array y lo devuelve
+
+nombreArray.shift(elemento)
+
+*/
+
+console.log(numerosSuerte);
+
+let quitarPrimero = numerosSuerte.shift();
+
+console.log(numerosSuerte);
+console.log(quitarPrimero);
+
+/*
+
+indexOf
+
+Encuentra el indice de un elemento en el array
+
+nombreArray.indexOf(dato);
+
+*/
+
+let indice = frutasFavoritas.indexOf("uva");
+
+console.log(indice)
+
+/*
+
+splice
+
+Eliminar o agregar elementos al array desde una posicion especifica 
+
+nombreArray.splice(indiceInicio, indiceFinal);
+
+Agregar
+
+nombreArray.splice(indiceInicio, pasos, valor1, valor2);
+
+*/
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.splice(1,2)
+
+console.log(frutasFavoritas);
+
+frutasFavoritas.splice(1,0, "fresa" , "maracuya")
+
+/*
+
+slice
+
+Crea una copia de una porcion del array, no modifica al original, se crea un nuevo array
+
+nombreArray.slice(indiceInicio, indiceFinal);
+
+*/
+
+let frutasCopia = frutasFavoritas.slice(3,6)
+
+console.log(frutasCopia)
+
+/*
+
+sort
+
+Ordena los elementpos de un array de mayor a menor
+
+nombreArray.sort ()
+
+De primera no pasamos datos entre parentesis
+
+*/
+
+console.log(frutasFavoritas)
+
+frutasFavoritas.sort();
+
+console.log(frutasFavoritas)
+
+
+
+console.log(numerosSuerte)
+numerosSuerte.sort();
+
+console.log(numerosSuerte)
